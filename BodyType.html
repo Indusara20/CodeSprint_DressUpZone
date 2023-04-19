@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DressUpZone</title>
+    <link rel="icon" type="image" href="img/logo.png" class="titlelogo">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+       <a href="#"><img src="img/logo.png" alt="">
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html" class="active">Body Type</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li> 
+                <li><a href="sproduct.html#cart-box"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="description">
+        <h1>Want To Know Your Body Type ??</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veniam quod repellat atque ab quaerat quisquam accusantium obcaecati facilis modi, 
+            error expedita quasi, tempore vitae quam nisi aut enim pariatur repudiandae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veniam quod repellat atque ab quaerat quisquam accusantium obcaecati facilis modi, 
+            error expedita quasi, tempore vitae quam nisi aut enim pariatur repudiandae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veniam quod repellat atque ab quaerat quisquam accusantium obcaecati facilis modi, 
+            error expedita quasi, tempore vitae quam nisi aut enim pariatur repudiandae.</p>
+    </div>
+
+    <section id="cal">
+        <div class="calculator">
+            <h5>Body Type</h5>
+            <div class="sizelabel">
+                <label class="sizename">Shoulder Size:</label>
+                <label class="sizename">Bust Size:</label>
+                <label class="sizename">Waist Size:</label>
+                <label class="sizename">High Hip Size:</label>
+                <label class="sizename">Hip Size:</label>
+            </div>
+            <div class="sizeinput">
+               <label><input type="number" class="sizenum" id="shoulder" min="30"><span>cm</span></label>
+               <label><input type="number" class="sizenum" id="bust" min="30"><span>cm</span></label>
+               <label><input type="number" class="sizenum" id="waist" min="30"><span>cm</span></label>
+               <label><input type="number" class="sizenum" id="highhip" min="30"><span>cm</span></label>
+               <label><input type="number" class="sizenum" id="hip" min="30"><span>cm</span></label>
+            </div>
+            
+            <button class="normal" onclick="return validate()">Find My Body Type</button>
+                
+            <div class="error">
+                <p></p>
+            </div>
+
+            <div class="results">
+                <p></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sizedes">
+        <div class="details">
+            <p><span>Shoulders - </span>Start at the tip of one shoulder and measure in a circle all the way around to your other shoulder. 
+                Keep the measuring tape high up around your shoulders so it almost slips off. You may need to have someone help you take this measurement.</p>
+                
+            <p><span>Bust - </span>Take the measurement at the fullest point of your bust. Make sure that the tape is not too tight. 
+                    You should be able to inhale and exhale freely as the measuring tape is wrapped around.</p>
+            
+            <p><span>Waist - </span>your waist is the narrowest part of your torso. The measuring tape you bring around your waist should sit tightly, 
+                     but it shouldn't "dig" into your skin. Don't pull your stomach in, either.</p>
+
+            <p><span>Hip - </span>you measure your hips at the widest point below your waist. 
+                Remember to remove your clothing and keep your feet together so that the measurement is as accurate as possible.</p>
+
+            <p><span>High Hip - </span> this is also a hip measurement but taken in a different place than the previous one. 
+                It is taken at the top of the hip curve - not at its widest point! You need to localize the upper swell of the hip over your pelvic bone.</p>
+        </div>
+        <div class="pic">
+            <img src="img/shape/pic3.png" alt="" class="pic1">
+            <img src="img/shape/pic1.png" alt="" class="pic2">
+        </div>
+    </section>
+
+    <section id="choice" class="sec-1">
+        <img src="img/shape/pic2.gif" alt="">
+        <div class="selection">
+            <p>Do you Want To Filter Our Shop Content With Your Body Type</p>
+            <button id="yes" class="normal" onclick="return yesButtonClicked()">Yes</button>
+            <button id="no" class="normal" onclick="window.location.href='shop.html'">No</button>
+        </div>
+    </section>
+
+    <footer class="sec-1">
+        <div class="col">
+            <img src="img/logo.png" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Address: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follw us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div> 
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms $ Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg">
+                <img src="img/pay/play.jpg">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png">
+        </div>
+        <div class="copyright">
+            <p>&#169; 2023, CodeSprint design - HTML CSS Ecommerce Demo</p>
+        </div>
+    </footer>
+
+    <script>
+        function validate() {
+            var shoulder = document.getElementById("shoulder").value;
+            var bust = document.getElementById("bust").value;
+            var waist = document.getElementById("waist").value;
+            var highhip = document.getElementById("highhip").value;
+            var hip = document.getElementById("hip").value;
+    
+            var errorDiv = document.querySelector(".error p");
+            var errorText = "";
+    
+            if (!shoulder) {
+                errorText += "Shoulder size is required.<br>";
+            }
+            else if (!bust) {
+                errorText += "Bust size is required.<br>";
+            }
+            else if (!waist) {
+                errorText += "Waist size is required.<br>";
+            }
+            else if (!highhip) {
+                errorText += "High hip size is required.<br>";
+            }
+            else if (!hip) {
+                errorText += "Hip size is required.<br>";
+            }
+    
+            if (errorText !== "") {
+                errorDiv.style.display = "block";
+                errorDiv.innerHTML = errorText;
+                return false;
+            }
+    
+            errorDiv.style.display = "none";
+            calculateBodyType(shoulder, bust, waist, highhip, hip);
+        }
+    
+        function calculateBodyType(shoulder, bust, waist, highhip, hip) {
+    
+        shoulder = shoulder / 2.54;
+        bust = bust / 2.54;
+        waist = waist / 2.54;
+        highhip = highhip / 2.54;
+        hip = hip / 2.54;
+
+        var waistshoulder = waist / shoulder;
+        var waistbust = waist / bust;
+        var waisthip = waist / hip;
+
+
+        var bodyType = "";
+
+        if ((shoulder >= 36 && shoulder < 40) && (bust >= 36 && bust < 40) && (waist >= 26 && waist < 30) && (highhip >= 36 && highhip < 40) && (hip >= 36 && hip < 40)) {
+            bodyType = "Hourglass";
+        }
+        else if ((shoulder >= 34 && shoulder <= 38) && (bust >= 32 && bust <= 36) && (waist >= 28 && waist <= 32) && (highhip >= 38 && highhip <= 42) && (hip >= 40 && hip <= 44)) {
+            bodyType = "Pear";
+        }
+        else if ((shoulder >= 38 && shoulder <= 42) && (bust >= 36 && bust <= 40) && (waist >= 28 && waist <= 32) && (highhip >= 36 && highhip <= 40) && (hip >= 36 && hip <= 40)) {
+            bodyType = "Inverted Triangle";
+        }
+        else if ((shoulder >= 32 && shoulder <= 36) && (bust >= 32 && bust <= 36) && (waist >= 26 && waist <= 30) && (highhip >= 36 && highhip <= 40) && (hip >= 36 && hip <= 40)) {
+            bodyType = "Triangle";
+        }
+        else if ((shoulder >= 36 && shoulder <= 40) && (bust >= 40 && bust <= 44) && (waist >= 34 && waist <= 38) && (highhip >= 40 && highhip <= 44) && (hip >= 40 && hip <= 44)) {
+            bodyType = "Round";
+        }
+        else {
+            bodyType = "Hard to Calculate";
+        }
+        var resultsDiv = document.querySelector(".results p");
+        resultsDiv.style.display = "block";
+            resultsDiv.innerHTML = "Your body type is " + bodyType;
+            return bodyType;
+    }
+
+
+    function yesButtonClicked(){
+        var bodyType = calculateBodyType(document.getElementById("shoulder").value, document.getElementById("bust").value, document.getElementById("waist").value, document.getElementById("highhip").value, document.getElementById("hip").value);
+        
+        if (bodyType == "Hourglass"){
+            window.location.href="hourglass.html";
+        }
+        else if (bodyType == "Pear"){
+            window.location.href="pear.html";
+        }
+        else if (bodyType == "Inverted Triangle"){
+            window.location.href="inveTrangle.html";
+        }
+        else if (bodyType == "Triangle"){
+            window.location.href="triangle.html";
+        }
+        else if (bodyType == "Round"){
+            window.location.href="round.html";
+        }
+        else{
+            window.location.href="shapeselect.html";
+        }
+    }
+
+    </script>    
+    
+</body>
+</html>
+
