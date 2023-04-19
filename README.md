@@ -1,2 +1,2 @@
 # CodeSprint_DressUpZone
-Team Reboot Rebels
+Team Reboot Rebels (CS - 210)
